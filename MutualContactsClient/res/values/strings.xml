@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mutual Contacts</string>
+    <string name="accept">Accept &amp; Continue</string>
+	<string name="verifytxt">This will send one time SMS message to verify your phone number. Carrier SMS charges may apply. \n \nPlease confirm your phone number.</string>
+	<string name="error_config">Please set the %1$s constant and recompile the app.</string>
+	<string name="already_registered">Device is already registered on server.</string>
+	<string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+        
+    <string name="gcm_project_id">670709272932</string>
+    <string name="gcm_service_class">com.ionitetechnologies.mutualcontacts.gcm.GCMIntentService</string>
+</resources>

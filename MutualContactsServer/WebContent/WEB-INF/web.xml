@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <listener>
+    <listener-class>
+      com.ionitetechnologies.mutualcontacts.server.servlet.ApiKeyInitializer
+    </listener-class>
+  </listener>
+  
+  <servlet>
+    <servlet-name>SendMessageServlet</servlet-name>
+    <servlet-class>
+      com.ionitetechnologies.mutualcontacts.server.servlet.SendMessageServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendMessageServlet</servlet-name>
+    <url-pattern>/send</url-pattern>
+  </servlet-mapping>
+  <servlet>
+      
+    <servlet-name>DeviceServlet</servlet-name>
+    <servlet-class>com.ionitetechnologies.mutualcontacts.server.servlet.DeviceServlet</servlet-class>
+  </servlet>
+  <servlet>
+  
+  <servlet>
+    <servlet-name>UploadContactsServlet</servlet-name>
+    <servlet-class>
+      com.ionitetechnologies.mutualcontacts.server.servlet.UploadContactsServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeviceServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>UploadContactsServlet</servlet-name>
+    <url-pattern>/uploadcontacts</url-pattern>
+  </servlet-mapping>
+</web-app>

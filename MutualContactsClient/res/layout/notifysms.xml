@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:padding="12dp">
+
+		<TextView android:id="@+id/textView1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_x="0dp"
+			android:layout_y="2dp" android:text="Event" />
+
+		<EditText android:id="@+id/etdescrisms" android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:ems="10"
+			android:inputType="text" android:text="" />
+
+
+		<TextView android:id="@+id/textView2" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_x="1dp"
+			android:layout_y="132dp" android:text="Time" />
+	</LinearLayout>
+
+
+
+	<DatePicker android:id="@+id/datePicker1sms"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_x="20dp" android:layout_y="150dp"
+		android:layout_gravity="center" />
+
+	<TimePicker android:id="@+id/timePicker1sms"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_x="48dp" android:layout_y="276dp"
+		android:layout_gravity="center" />
+
+	<Button android:id="@+id/btnsendsms" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:onClick="smsIntent"
+		android:text="Send" />
+
+
+
+</LinearLayout>
